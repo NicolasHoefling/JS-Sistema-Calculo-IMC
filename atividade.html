@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- W3 CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- links w3 -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2020.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- W3 CSS COLORS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-vivid.css">
+
+    <!-- FONTS GOOGLE -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+
+    <!-- CORES INDIGO AND DEEP PURPLE CSS -->
+    <style>
+        /* USO DAS FONTS EM */
+        h1, h2{
+            font-family: "Oswald", sans-serif;
+        }
+        h5 {
+            font-family: 'Roboto Mono', sans-serif;
+        }
+        /* CORES DO IMC */
+        .w3-imc-input {color:rgb(255, 255, 255) !important; background-color:#1d353c !important}
+        .w3-imc {color:rgb(0, 0, 0) !important; background-color:#0047e14a !important}
+        .w3-imc-fundo {color:rgb(0, 0, 0) !important; background-color:#0047e14a !important}
+        .w3-text-input {color:#ffffff !important}
+        .w3-text-input-theme {color:rgb(0, 195, 255) !important}
+        .w3-border-input {border-color:rgb(0, 195, 255) !important}
+        .w3-hover-border-input:hover {border-color:rgb(0, 110, 255) !important}
+
+        input::placeholder {
+            color: rgb(0, 195, 255);
+        }
+
+        /* CORES DA LINHA DEGRADE INFO */
+        .w3-linec-16 {color:#000 !important; background-color:#02b6ed !important}
+        .w3-linec-17 {color:#000 !important; background-color:#00a5ca !important}
+        .w3-linec-18 {color:#000 !important; background-color:#0091bd !important}
+        .w3-linec-25 {color:#000 !important; background-color:#008496 !important}
+        .w3-hover-border-line:hover {background-color:rgba(14, 227, 235, 0.124) !important}
+        .w3-hover-border-line1:hover {border-color:rgb(0, 110, 255) !important}
+        .w3-hover-color-line:hover {color:#3e464f !important}
+        /* .w3-linec-30 {color:#000 !important; background-color:#00828A !important} */
+
+
+        /* MEU TEMA DE CORES */
+        .w3-theme-l5 {color:#000 !important; background-color:#f3f4fb !important}
+        .w3-theme-fd {color:#000 !important; background-color:#2e009958 !important}
+        .w3-theme-l4 {color:#000 !important; background-color:#d8dcf1 !important}
+        .w3-theme-l3 {color:#000 !important; background-color:#b1b8e3 !important}
+        .w3-theme-l2 {color:#fff !important; background-color:#8995d6 !important}
+        .w3-theme-l1 {color:#fff !important; background-color:#6271c8 !important}
+        .w3-theme-d1 {color:#fff !important; background-color:#3949a3 !important}
+        .w3-theme-d2 {color:#fff !important; background-color:#334191 !important}
+        .w3-theme-d3 {color:#fff !important; background-color:#00b6a790 !important}
+        .w3-idark    {color:rgb(255, 255, 255) !important; background-color:#029290bb !important}
+        .w3-theme-d5 {color:#fff !important; background-color:#00616b !important}
+
+        .w3-theme-light {color:#000 !important; background-color:#f3f4fb !important}
+        .w3-theme-dark {color:#fff !important; background-color:#20295b !important}
+        .w3-theme-action {color:#fff !important; background-color:#20295b !important}
+
+        .w3-theme {color:#fff !important; background-color:#3f51b5 !important}
+        .w3-text-theme {color:#ffffff !important}
+        .w3-border-theme {border-color:#3e464f5b !important}
+
+        .w3-hover-theme:hover {color:rgba(155, 232, 235, 0.761) !important;
+             background-color:#3e464f!important}
+        .w3-hover-text-theme:hover {color:#3f51b5 !important}
+        .w3-hover-border-theme:hover {border-color:#3f51b5 !important}
+        
+  
+    </style>
+    
+ 
+
+    <title>IMC - ATIVIDADE</title>
+</head>
+<body class="w3-imc-fundo">
+
+    <header class="w3-container w3-card-4 w3-theme-l4 w3-border-bottom w3-bottombar w3-border-blue w3-top ">
+        <div class="w3-container">
+            <div>
+                <h1 class="w3-text-blue w3-col w3-center">CALCULO DO IMC</h1>
+            </div>   
+    </header>
+    
+
+    <div style="background-image: url(img.png);background-repeat: no-repeat;background-size: cover  ;background-attachment: fixed;" class="w3-container w3-padding-64 w3-card-4 w3-theme-fd w3-margin-top">
+        <div class="w3-container">
+            <!-- INICIO -->
+                <div class="w3-margin w3-padding">
+                    <h1 class="w3-center w3-idark w3-leftbar w3-rightbar w3-border-theme w3-round-xlarge"> IMC - Índice de Massa Corporal</h1>
+                </div>
+            <!-- CONTEUDO -->
+                <div class="w3-container">
+                    <h5 class="w3-container w3-idark w3-border w3-margin w3-padding w3-bottombar w3-card-4 w3-bottombar w3-rightbar  w3-border-theme w3-hover-border-input w3-round-xxlarge w3-hover-theme">
+                    IMC é a sigla para Índice de Massa Corporal,que é um cálculo que serve para avaliar se a pessoa está dentro do seu peso ideal em relação à altura. Assim, de acordo com o valor do resultado de IMC, a pessoa pode saber se está dentro do peso ideal, acima ou abaixo do peso desejado.
+                    Estar dentro do peso certo é importante porque estar acima ou abaixo desse peso pode influenciar bastante a saúde, aumentando o risco de doenças como desnutrição quando se está abaixo do peso, e AVC ou infarto, quando se está acima do peso. Assim, é comum os médicos, enfermeiros e nutricionistas avaliem o IMC da pessoa nas consultas de rotina para verificar a possibilidade de doenças que a pessoa pode estar pre-disposta.
+                    </h5>
+                    <h5 class="w3-container w3-idark w3-border w3-margin w3-padding w3-bottombar w3-card-4 w3-bottombar w3-rightbar  w3-border-theme w3-hover-border-input w3-round-xxlarge w3-hover-theme">O cálculo do IMC deve ser feito usando a seguinte fórmula matemática<p>Fórmula: Peso ÷ (altura x altura). </p>
+                    </h5>
+                </div>
+                <div>
+                </div>
+        </div>
+    </div>
+
+    <!-- PESOS -->
+    <div class="w3-container-fluid w3-card-4 w3-topbar w3-border-bottom w3-border-black">
+        <div class="w3-row">
+            <div class="w3-col m3 w3-linec-16 w3-padding">
+                <h2 class="w3-text-black"> Muito abaixo do Peso</h2>
+                <h5 class="w3-text-black">16 a 16,9 kg/m2</h5>
+                <h6 class="w3-text-white">Queda de cabelo, infertilidade, ausência menstrual.</h6>
+            </div> 
+            <div class="w3-col m3 w3-linec-17 w3-padding">
+                <h2 class="w3-text-black">Abaixo do Peso</h2> 	
+                <h5 class="w3-text-black"> 17 a 18,4 kg/m2</h5>
+                <h6 class="w3-text-white">Fadiga, stress, ansiedade, Pele seca, Dor nas articulações.</h6>
+            </div>
+            <div class="w3-col m3 w3-linec-18 w3-padding">
+                <h2 class="w3-text-black">Peso Normal</h2>
+                <h5 class="w3-text-black">18,5 a 24,9 kg/m2</h5>	
+                <h6 class="w3-text-white">Menor risco de doenças cardíacas e vasculares uma pessoa mais saudavel.</h6>
+            </div>
+            <div class="w3-col m3 w3-linec-25 w3-padding">
+                <h2 class="w3-text-black">Acima do Peso</h2>
+                <h5 class="w3-text-black">25 a 29,9 kg/m2	</h5>
+                <h6 class="w3-text-white">Fadiga, má circulação, varizes, Diabetes, Roncos e apneia do sono.</h6>
+            </div>
+            <!-- comentado por erro de responsivo -->
+            <!-- <div class="w3-col m4 w3-linec-30">
+                <h2>Obesidade</h2>
+                Obesidade Grau I	
+                30 a 34,9 kg/m2	
+                Diabetes, angina, infarto, aterosclerose
+        
+                Obesidade Grau II	
+                35 a 40 kg/m2	
+                Apneia do sono, falta de ar
+         
+                Obesidade Grau III	
+                maior que 40 kg/m2	
+                Refluxo, dificuldade para se mover, escaras, diabetes, infarto, AVC 
+            </div> -->
+        </div>  
+    </div>
+    
+<!-- formulario -->
+    <form>
+        <div class="w3-container  w3-margin w3-padding ">
+            <h2 class="w3-center ">CONFIRA SEU IMC</h2>
+            <div class="w3-container w3-row w3-imc-input w3-section w3-card-4 w3-border w3-bottombar w3-rightbar w3-round-xxlarge w3-border-input w3-hover-border-input w3-padding">
+                <i class="w3-xxxlarge fa fa-user"></i>
+                <label class="w3-margin-left">SEU NOME</label>
+                <input class="w3-animate-input w3-margin-top w3-input w3-border-bottom  w3-border-input w3-round-xlarge w3-input w3-text-input-theme"  type="text" style="background-color: rgba(99, 255, 239, 0.282); width: 500px;" name="nome" id="nome" placeholder="Nome"
+                onfocus="ativa(this)" onblur="desativa(this)" required>
+            </div>    
+            <div class="w3-container w3-row w3-imc-input w3-section w3-card-4 w3-border w3-bottombar w3-rightbar w3-round-xxlarge w3-border-input w3-hover-border-input w3-padding">
+                <i class="w3-xxxlarge fa fa-male"></i>
+                <label class="w3-margin-left">ALTURA CM</label>
+                <input type="text" placeholder="Ex: 167" class="w3-hover- w3-animate-input w3-margin-top w3-border-bottom  w3-border-input w3-round-xlarge w3-input w3-text-input-theme" name="altura" id="altura" style="background-color: rgba(99, 255, 239, 0.282); width: 500px;"
+                onfocus="ativa(this)" onblur="desativa(this); mudaM()"required>
+                <input class="w3-hover- w3-animate-input w3-margin-top w3-border-bottom  w3-border-input w3-round-xlarge w3-input w3-text-input-theme" name="alturam" id="alturam" style="background-color: rgba(99, 255, 239, 0.282); width: 500px;" type="text" > 
+            </div>
+            <div class="w3-container w3-row w3-imc-input w3-section w3-card-4 w3-border w3-bottombar w3-rightbar w3-round-xxlarge w3-border-input w3-hover-border-input w3-padding">
+                <i class="w3-xxlarge fa fa-balance-scale"></i>
+                <label class="w3-margin-left">PESO KG</label>
+                <input type="text" placeholder="Ex: 65,5" class="w3-animate-input w3-margin-top w3-border-bottom  w3-border-input w3-round-xlarge w3-input w3-text-input-theme" name="peso" id="peso" style="background-color: rgba(99, 255, 239, 0.282); width: 500px;"
+                onfocus="ativa(this)" onblur="desativa(this)" onKeyup="substitui(this);" required>
+            </div>
+            <button type="submit" class="w3-button w3-xlarge w3-card-4 w3-margin-top w3-imc-input w3-bottombar w3-rightbar w3-border-bottom  w3-border-input w3-round-xlarge w3-padding w3-margin w3-border-input w3-hover-border-input" onclick="calcular()">Calcular</button>
+        </div>
+    </form>
+
+        </div>
+    </div>
+</div>
+
+<!--  FORMULAS SCRIPTS  -->
+    <script>
+            var nome = (document.getElementById('nome').value);
+            var altura = (document.getElementById('altura').value);
+            var peso = (document.getElementById('peso').value);
+            var altura = altura / 100;
+            var m = peso / (altura * altura);
+            
+            console.log(nome);
+            console.log(altura);
+            console.log(peso);
+
+        function ativa(obj) {
+			obj.style.background = "#3e464f";
+		}
+
+		function desativa(obj) {
+			//obj.style.background = "#fff";
+			obj.style.background = "rgba(99, 255, 239, 0.282)";
+		}
+
+            // altcm = document.getElementById
+            // altm = altcm/100;
+            // document.getElementById("altm"). value;
+        function substitui(el) {
+            el.value = el.value.replace(",", ".");
+        }
+
+        function calcular(){
+            /*
+            ALTURA 265MAX
+            PESO MAX
+            IMC MAX 60
+            */
+
+            var nome = (document.getElementById('nome').value);
+            var altura = (document.getElementById('altura').value);
+            var peso = (document.getElementById('peso').value);
+            var altura = altura / 100;
+            var mn = peso / (altura * altura);
+            var m = mn.toFixed(2)
+
+            if (nome == ""){
+                alert(`Preencha seu NOME corretamente Vacilão!!`);
+                return
+            }
+            if (altura == ""){
+                alert(`Preencha sua ALTURA corretamente, ${nome}!!`) 
+                return
+            }
+            if (peso == ""){
+                 alert(`Preencha sua PESO corretamente, ${nome}!!`) 
+                 return
+            }
+
+                // if (m == 0 ) {
+                //     return
+                // }
+                else if(m < 16){
+                    alert(`Então ${nome}, você possui índice de massa corporal igual a ${m}, sendo classificado como: Baixo peso muito grave`);
+                } 
+                else if(m >= 16 && m < 16.99){
+                    alert(`Então ${nome}, você possui índice de massa corporal igual a ${m}, sendo classificado como:  Baixo peso grave`);
+                } 
+                else if(m >=  17 && m < 18.49 ){
+                        alert(`Então ${nome}, você possui índice de massa corporal igual a ${m}, sendo classificado como: Baixo peso`);
+                }
+                else if(m >= 18.50 && m < 24.99){
+                        alert(`Então ${nome}, você possui índice de massa corporal igual a ${m}, sendo classificado como: Peso normal`);
+                }
+                else if(m >= 25 && m < 29.99){
+                        alert(`Então ${nome}, você possui índice de massa corporal igual a ${m}, sendo classificado como: Sobrepeso`);
+                }
+                else if(m >= 30 && m < 34.99){
+                        alert(`Então ${nome}, você possui índice de massa corporal igual a ${m}, sendo classificado como: Obesidade grau II`);
+                }
+                else if(m >= 35 && m < 60){
+                    alert(`Então ${nome}, você possui índice de massa corporal igual a ${m}, sendo classificado como: Obesidade grau III`);
+                }
+                else{
+                    alert(`Então ${nome}, você possui índice de massa corporal igual a ${m}, sendo classificado como: Obesidade grau III`);
+                    }
+        }
+
+        function mudaM(){
+           cm = document.getElementById('altura').value;
+           vm = cm / 100;
+           document.getElementById("alturam").value= vm;
+        }
+    </script>
+</body>
+</html>
